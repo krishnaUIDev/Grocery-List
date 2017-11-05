@@ -25,7 +25,8 @@ export class GroceryListComponent implements OnInit {
     console.log('click added');
   }
   onInputChange(event: any) {
-    console.log(event.target.value);
+   // console.log(event.target.value);
+    this.addedItem = event.target.value;
   }
   ngOnInit() {
   }
