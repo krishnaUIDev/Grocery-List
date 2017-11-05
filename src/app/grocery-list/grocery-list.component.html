@@ -1,3 +1,10 @@
-<p>
-  grocery-list works!
-</p>
+<h3>My Grocery list</h3>
+
+<input type="text" class="form-control" (input)="onInputChange($event)">
+<br>
+<button class="btn btn-primary" [disabled]="addNewItem" (click)="onClick()">Add an item</button>
+<br/>
+
+<p>{{addedItem}}</p>
+  <app-grocery-item></app-grocery-item>
+

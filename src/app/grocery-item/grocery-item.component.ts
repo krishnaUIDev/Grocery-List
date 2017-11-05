@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grocery-item.component.css']
 })
 export class GroceryItemComponent implements OnInit {
-
+ itemName: string = 'Helo word';
   constructor() { }
 
   ngOnInit() {

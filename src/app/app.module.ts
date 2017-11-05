@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GroceryItemComponent } from './grocery-item/grocery-item.component';
 import { GroceryListComponent } from './grocery-list/grocery-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { GroceryListComponent } from './grocery-list/grocery-list.component';
     GroceryListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

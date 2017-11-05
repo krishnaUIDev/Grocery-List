@@ -6,10 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grocery-list.component.css']
 })
 export class GroceryListComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  addNewItem: boolean = true;
+  addedItem: string = '';
+  constructor() {
+    // fat arrow function
+    setTimeout( () => {
+         this.addNewItem = false;
+    }, 1000);
+  }
+ /* onIem() {
+    console.log('helo world');
   }
 
+  onInputChange() {
+    console.log(event.target.value);
+  }*/
+  onClick() {
+    console.log('click added');
+  }
+  onInputChange() {
+    console.log(event.target.value);
+    // this.addedItem = event.target.value;
+  }
+  ngOnInit() {
+  }
 }
