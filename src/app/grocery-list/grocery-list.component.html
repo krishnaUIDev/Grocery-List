@@ -5,6 +5,6 @@
 <button class="btn btn-primary" [disabled]="addNewItem" (click)="onClick()">Add an item</button>
 <br/>
 
-<p>{{addedItem}}</p>
+<p [innerHtml]="addedItem"></p>
   <app-grocery-item></app-grocery-item>
 

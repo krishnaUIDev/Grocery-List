@@ -17,15 +17,12 @@ export class GroceryListComponent implements OnInit {
  /* onIem() {
     console.log('helo world');
   }
-
-  onInputChange() {
-    console.log(event.target.value);
-  }*/
+ */
   onClick() {
     console.log('click added');
   }
   onInputChange(event: any) {
-   // console.log(event.target.value);
+   console.log(event.target.value);
     this.addedItem = event.target.value;
   }
   ngOnInit() {
