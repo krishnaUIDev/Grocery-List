@@ -2,9 +2,11 @@
 
 <input type="text" class="form-control" [(ngModel)] = "addedItem">
 <br>
-<button class="btn btn-primary" [disabled]="addNewItem" (click)="onClick()">Add an item</button>
+<button class="btn btn-primary"  (click)="onClick()">Add an item</button>
 <br/>
 
-<p [innerHtml]="addedItem"></p>
+<!--<p [innerHtml]="addedItem">Item was added</p>-->
+
+<p *ngIf="display">No item was added</p>
   <app-grocery-item></app-grocery-item>
 
