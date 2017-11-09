@@ -1,12 +1,21 @@
 <h3>My Grocery list</h3>
 
-<input type="text" class="form-control" [(ngModel)] = "addedItem">
+<input type="text" class="form-control" [(ngModel)] = "addedItem"  >
 <br>
-<button class="btn btn-primary"  (click)="onClick()">Add an item</button>
+<button class="btn btn-primary"  (click)="onItemAdded()">Add an item</button>
 <br/>
 
 <!--<p [innerHtml]="addedItem">Item was added</p>-->
 
-<p *ngIf="display">No item was added</p>
-  <app-grocery-item></app-grocery-item>
+<!--
+<p *ngIf="display;else itemAdded">No item was added</p>
+<ng-template #itemAdded>
+<p>An Item was added</p>
+</ng-template>
+-->
+
+<p *ngFor="let item of items">{{item}}</p>
+
+
+<app-grocery-item></app-grocery-item>
 

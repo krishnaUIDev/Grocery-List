@@ -7,16 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GroceryListComponent implements OnInit {
   addNewItem: boolean = true;
-  // addedItem: string = '';
+   addedItem: string = '';
   display: boolean = true;
+  items: string[] = ['mango', 'banana', 'apple'];
+
+
   constructor() {
     // fat arrow function
     /*setTimeout( () => {
          this.addNewItem = false;
     }, 1000);*/
   }
-  onClick() {
-    console.log('click added');
+  onItemAdded() {
+   // console.log('click added');
+    this.display = false;
+
+
   }
   onInputChange(event: any) {
    console.log(event.target.value);
