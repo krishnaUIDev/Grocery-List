@@ -13,20 +13,14 @@ export class GroceryListComponent implements OnInit {
 
 
   constructor() {
-    // fat arrow function
-    /*setTimeout( () => {
-         this.addNewItem = false;
-    }, 1000);*/
   }
   onItemAdded() {
-   // console.log('click added');
     this.display = false;
 
 
   }
   onInputChange(event: any) {
    console.log(event.target.value);
-    // this.addedItem = event.target.value;
   }
   ngOnInit() {
   }
